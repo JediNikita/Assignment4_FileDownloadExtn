@@ -15,9 +15,7 @@
 	<name>Assignment4_FileDownloadExtn</name>
 	<description>Demo project for Spring Boot</description>
 
-	<properties>
-		<java.version>11</java.version>
-	</properties>
+	<!-- >properties> <java.version>11</java.version> </properties -->
 
 	<dependencies>
 		<dependency>
@@ -57,9 +55,19 @@
 			<version>9.0.37</version>
 		</dependency>
 
-		
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+			<version>2.10.0.pr2</version>
+		</dependency>
 
-
+		<dependency>
+			<groupId>com.example</groupId>
+			<artifactId>Assignment2_FileDownload</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+			<scope>system</scope>
+			<systemPath>${basedir}\src\lib\Assignment2Jarff.jar</systemPath>
+		</dependency>
 	</dependencies>
 
 	<build>
