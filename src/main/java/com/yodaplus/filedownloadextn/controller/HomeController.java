@@ -1,7 +1,7 @@
 package com.yodaplus.filedownloadextn.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
@@ -21,8 +21,8 @@ public class HomeController {
 		  ModelAndView mv= new ModelAndView(); mv.setViewName("home"); return mv;
 	}
 	
-	@RequestMapping(value="/home" , method=RequestMethod.POST)
-	public void callFileService(@RequestBody File file) {
+	@RequestMapping(value="/home" , method=RequestMethod.POST, consumes = MediaType.APPLICATION_FORM_URLENCODED_VALUE)
+	public void callFileService( File file) {
 		
 		try {
 			extnService.callDownloadFile(file);

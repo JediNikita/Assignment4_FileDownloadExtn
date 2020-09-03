@@ -8,14 +8,12 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-<script>
-	
-</script>
+
 <title>Download File</title>
 </head>
 <body>
 <div class="container">
-	<form method= "post" action="${pageContext.request.contextPath}/home">
+	<form method= "post" id="fileForm" action="${pageContext.request.contextPath}/home" >
 		<div class="form-group">
 			<label for="fileName">File Name:</label>
 			<input type="text" class="form-control" id="fileName" name="fileName"/>
@@ -28,7 +26,7 @@
 			<label for="path">Save To:</label>
 			<input type="text" class="form-control" id="path" name="path"/>
 		</div>
-		<button type="submit" class="btn btn-default" onclick="handleSubmit()">Submit</button>
+		<button type="submit" class="btn btn-default" >Submit</button>
 	</form> 
 </div>
 </body>
