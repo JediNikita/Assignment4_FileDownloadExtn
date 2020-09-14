@@ -24,10 +24,5 @@ public class WebConfig extends WebMvcConfigurerAdapter
     configurer.enable();
     }
     
-	/*
-	 * @Bean public HttpInvokerProxyFactoryBean invoker() {
-	 * HttpInvokerProxyFactoryBean invoker = new HttpInvokerProxyFactoryBean();
-	 * invoker.setServiceUrl("http://localhost:8081/downloadFile");
-	 * invoker.setServiceInterface(FileService.class); return invoker; }
-	 */
+	
 }

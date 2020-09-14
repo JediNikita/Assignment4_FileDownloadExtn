@@ -21,7 +21,7 @@ public class Assignment4FileDownloadExtnApplication {
 		
 		  public static void main(String[] args) {
 		  SpringApplication.run(Assignment4FileDownloadExtnApplication.class,
-					args)/* .getBean(FileService.class) */; }
+					args)/* .getBean(FileServiceImpl.class) */; }
 		 
 	
 	 protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
